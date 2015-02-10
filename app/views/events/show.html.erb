@@ -1,0 +1,8 @@
+<h1> Event Show Page </h1>
+<p>Description: <%= @event.description %></p>
+<p>Location: <%= @event.location %></p>
+<p>Date: <%= @event.date %></p>
+<p>Created At: <%= @event.created_at %></p>
+<p>Updated At: <%= @event.updated_at %></p>
+<%= link_to "Edit Product", edit_product_path(@product) %>
+<%= link_to "Delete Product", product_path(@product), method: :delete, data: {confirm: "Are you sure?"} %>

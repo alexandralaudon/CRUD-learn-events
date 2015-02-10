@@ -1,0 +1,13 @@
+<h1>Events<h1>
+  <p>
+    <%= link_to "Create Event", new_event_path %>
+  </p>
+
+  <% @events.each do |event| %>
+
+    <%= event.description %>
+    <%= event.location %>
+    <%= event.date %>
+    <%= event.capacity %>
+
+  <% end %>
